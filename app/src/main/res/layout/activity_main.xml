@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="299dp"
+        app:srcCompat="@drawable/yoda"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+    <Button
+        android:id="@+id/random_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openProfileKanye"
+        android:text="@string/random_button" />
+
+    <Button
+        android:id="@+id/yoda_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openProfileYoda"
+        android:text="@string/yoda_button" />
+
+    <EditText
+        android:id="@+id/text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+</LinearLayout>
